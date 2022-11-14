@@ -39,3 +39,4 @@
 # macOS file created during build process now with flag -g
 *.dSYM
 
+1_helloWorld/.DS_Store
