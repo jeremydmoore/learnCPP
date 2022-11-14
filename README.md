@@ -1,4 +1,4 @@
 # learnCPP
-## Personal projects to learn C++
+## Projects to learn C++
 
-Start with 0_setup.md
+I created this repository to store the projects I've created while learning C++. If you wish to follow my path, I suggest starting with 0_setup.md. 
