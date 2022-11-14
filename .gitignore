@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# VS Code files
+.vscode
+
+# macOS files
+.DS_Store
+# macOS file created during build process now
+*.dSYM
+
