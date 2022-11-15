@@ -1,7 +1,10 @@
 /* 
-// 1_helloWorld.cpp
-// projects/learnCPP/1_helloWorld.cpp
-// Prints "Hello world!" to the console
+    projects/learnCPP/1_helloWorld.cpp
+
+    Expected behavior:
+    1. Print "Hello world!" to the console
+
+    Jeremy@MooreCreativeArts.com
 */
 
 #include <iostream>

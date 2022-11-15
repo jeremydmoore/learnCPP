@@ -36,5 +36,3 @@
 
 # macOS files
 *.DS_Store
-# macOS file created during build process now with flag -g
-*.dSYM
