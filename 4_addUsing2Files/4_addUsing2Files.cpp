@@ -26,8 +26,8 @@ void printSumOf2Nums(int x, int y)
 int main()
 {
     // get 2 ints
-    int x{ getNumFromUserInput() };
-    int y{ getNumFromUserInput() };
+    int x{ userInput::getNum() };
+    int y{ userInput::getNum() };
 
     printSumOf2Nums(x, y);
 

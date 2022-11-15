@@ -9,11 +9,14 @@
 
 #include <iostream>
 
-int getNumFromUserInput()
+namespace userInput
 {
-    std::cout << "Enter an integer: ";
-    int num{};
-    std::cin >> num;
+    int getNum()
+    {
+        std::cout << "Enter an integer: ";
+        int num{};
+        std::cin >> num;
 
-    return num;
+        return num;
+    }
 }

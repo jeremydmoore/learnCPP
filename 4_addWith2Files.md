@@ -61,3 +61,18 @@ projects/learnCPP/4_addUsing2Files.md
 2. There's something powerful about creating a single file that can be shared and ran on the desktop without setting up a development environement
     1. Is the only requirement to run this on Windows using a Windows build environment?
         1. Good question, but waaay out of scope for this macOS project
+3. Create namespaces inside of header files to control data flow in the program
+    1. In ***.h** file:
+        ```c++
+        namespace foo
+        {
+            void bar()
+            {
+                // do something
+            }
+        }
+        ```
+    2. In ***.cpp** file:
+        ```c++
+        foo::bar()
+        ```
