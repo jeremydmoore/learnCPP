@@ -65,4 +65,4 @@ int main()
     1. `% ./2_multiplyBy2/2_multiplyBy2`
 3. If executable is not performing as expected, debug as necessary until it does
 
-## 9. Continue to project 3_add2Integers
+## 9. Continue to 3_add2Integers.md

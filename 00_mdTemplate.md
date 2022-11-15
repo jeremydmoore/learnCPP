@@ -11,7 +11,7 @@ projects/learnCPP/00_mdTemplate.md
     1. `% code ~/projects/learnCPP/`
 4. Double-click **00_mdTemplate.cpp** in **VS Code**'s *Explorer* tab to open the file
 
-## 3. Add boilerplate
+## 3. Add boilerplate to **00_mdTemplate.cpp**
 ```c++
 /* 
     projects/learnCPP/00_mdTemplate.cpp
@@ -23,32 +23,14 @@ projects/learnCPP/00_mdTemplate.md
 */
 ```
 
-## 4. Add includes
-```c++
-# include <something>
-```
-
-## 5. Add functions
-```c++
-functions()
-```
-
-## 6. Add int main()
-```c++
-int main()
-{
-    return 0;
-}
-```
-
-## 7. Build **00_mdTemplate** executable
+## ?. Build **00_mdTemplate** executable
 1. In **VS Code** on **00_mdTemplate.cpp**, click the *Play* button to build the project
 2. If there are build errors or warnings, then debug necessary until it builds without them
 
-## 8. Run **00_mdTemplate** executable
+## ?. Run **00_mdTemplate** executable
 1. Open a new **Terminal** in **VS Code** if needed, keyboard shortcut ``Ctrl+Shift+` ``
 2. Run executable
     1. `% ./00_mdTemplate/00_mdTemplate`
 3. If executable is not performing as expected, debug as necessary until it does
 
-## 8. Continue to project #_name
+## ?. Continue to project #_name

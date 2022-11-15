@@ -23,4 +23,4 @@
 ## 3. Make a nested directory for C++ projects
 1. `% mkdir -p ~/projects/learnCPP`
 
-## 4. Continue to project 1_helloWorld
+## 4. Continue to 1_helloWorld.md

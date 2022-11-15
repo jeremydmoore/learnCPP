@@ -71,4 +71,4 @@ int main()
     1. `% ./3_add2Integers/3_add2Integers`
 3. If executable is not performing as expected, debug as necessary until it does
 
-## 8. Continue to project #_name
+## 8. Continue to 4_addWith2Files.md

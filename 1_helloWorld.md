@@ -70,4 +70,4 @@ int main()
     1. `% ./1_helloWorld/1_helloworld`
 3. If executable is not performing as expected, debug as necessary until it does
 
-## 10. Continue to project 2_multiplyBy2
+## 10. Continue to 2_multiplyBy2.md
