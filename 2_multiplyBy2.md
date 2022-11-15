@@ -2,16 +2,16 @@
 
 projects/learnCPP/2_multiplyBy2.md
 
-## 1. Make a directory and source code file for this project in **Terminal**
+## Make a directory and source code file for this project in **Terminal**
 1. `% mkdir ~/projects/learnCPP/2_multiplyBy2`
 2. `% touch ~/projects/learnCPP/2_multiplyBy2/2_multiplyBy2.cpp`
 
-## 2. Begin coding in **VS Code**
-3. Open **VS Code** in learnCPP working directory, if not already open
+## Begin coding in **VS Code**
+1. Open **VS Code** in learnCPP working directory, if not already open
     1. `% code ~/projects/learnCPP/`
-4. Double-click **2_multiplyBy2.cpp** in **VS Code**'s *Explorer* tab to open the file
+2. Double-click **2_multiplyBy2.cpp** in **VS Code**'s *Explorer* tab to open the file
 
-## 3. Add boilerplate
+## Add boilerplate
 ```c++
 /* 
     projects/learnCPP/2_multiplyBy2.cpp
@@ -24,45 +24,17 @@ projects/learnCPP/2_multiplyBy2.md
 */
 ```
 
-## 4. Add includes
-```c++
-#include <iostream>  // for user input and printing
-```
+## Write code
 
-## 5. Add functions
-```c++
-int getNumFromUserInput()
-{
-    // code here
-    return num
-}
-
-void printMultipliedBy2(num)
-{
-    // code here
-}
-```
-
-## 5. Add int main()
-```
-int main()
-{
-    int num { getNumFromUserInput() };
-
-    printMultipliedBy2(num);
-
-    return 0
-}
-```
-
-## 7. Build **2_multiplyBy2** executable
+## Build **2_multiplyBy2** executable
 1. In **VS Code** on **2_multiplyBy2.cpp**, click the *Play* button to build the project
-2. If there are build errors or warnings, then debug necessary until it builds without them
+2. If there are build errors or warnings, then debug necessary until it builds cleanly
 
-## 8. Run **2_multiplyBy2** executable
+## Run **2_multiplyBy2** executable
 1. Open a new **Terminal** in **VS Code** if needed, keyboard shortcut ``Ctrl+Shift+` ``
 2. Run executable
     1. `% ./2_multiplyBy2/2_multiplyBy2`
 3. If executable is not performing as expected, debug as necessary until it does
 
-## 9. Continue to 3_add2Integers.md
+## Post project review
+1. The use of more symbols and type declarations than **Python** will probably result in quite a few build errors in the beginning

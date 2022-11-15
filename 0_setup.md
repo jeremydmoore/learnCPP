@@ -2,7 +2,7 @@
 
 ~/projects/learnCPP/0_setup.md
 
-## 1. Install **Visual Studio Code** and extensions
+## Install **Visual Studio Code** and extensions
 1. Install [**Visual Studio Code**](https://code.visualstudio.com) (**VS Code**)
 2. Install [**C++**](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) extension
    - additional required extensions will be auto-installed
@@ -13,14 +13,20 @@
    - Used to interact with my [**learnCPP GitHub repository**](https://github.com/jeremydmoore/learnCPP) for all of these C++ projects
    - All further installation and use of GitHub is out of scope and won't be included beyond this step
 
-## 2. Make sure **clang++** is installed
+## Make sure **clang++** is installed
 1. Open **Terminal**
 2. `% clang++ --version`
 3. If **clang++** isn't installed, install **Apple**'s command line developer tools
    1. `% xcode-select --install`
    2. `% clang++ --version`
 
-## 3. Make a nested directory for C++ projects
+## Make a nested directory for C++ projects
 1. `% mkdir -p ~/projects/learnCPP`
 
-## 4. Continue to 1_helloWorld.md
+## Post project review
+1. Switched from **Xcode** to **VS Code**
+   1. I'm much more familiar with **VS Code**
+   2. **Microsoft**'s documentation is much better than **Apple**'s
+   3. There are more resources available for **VS Code** online than **Xcode**
+
+## Continue to 1_helloWorld.md

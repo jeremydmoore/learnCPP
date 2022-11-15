@@ -2,16 +2,16 @@
 
 projects/learnCPP/3_add2Integers.md
 
-## 1. Make a directory and source code file for this project in **Terminal**
+## Make a directory and source code file for this project in **Terminal**
 1. `% mkdir ~/projects/learnCPP/3_add2Integers`
 2. `% touch ~/projects/learnCPP/3_add2Integers/3_add2Integers.cpp`
 
-## 2. Begin coding in **VS Code**
-3. Open **VS Code** in learnCPP working directory, if not already open
+## Begin coding in **VS Code**
+1. Open **VS Code** in learnCPP working directory, if not already open
     1. `% code ~/projects/learnCPP/`
-4. Double-click **3_add2Integers.cpp** in **VS Code**'s *Explorer* tab to open the file
+2. Double-click **3_add2Integers.cpp** in **VS Code**'s *Explorer* tab to open the file
 
-## 3. Add boilerplate
+## Add boilerplate
 ```c++
 /* 
     projects/learnCPP/3_add2Integers.cpp
@@ -24,51 +24,24 @@ projects/learnCPP/3_add2Integers.md
 */
 ```
 
-## 4. Add includes
-```c++
-#include <iostream>  // for user input and printing
-```
+## Write code
 
-## 5. Add functions
-```c++
-int getNumFromUserInput()
-{
-    // code here
-
-    return num;
-}
-
-int sumOf2Numbers(int x, int y)
-{
-    // code here
-
-    return sum;
-}
-```
-
-## 6. Add int main()
-```c++
-int main()
-{
-    int x << getNumFromUserInput();
-    int y << getNumFromUserInput();
-
-    int sum << sum2Numbers(x, y);
-
-    // print sum
-
-    return 0;
-}
-```
-
-## 7. Build **3_add2Integers** executable
+## Build **3_add2Integers** executable
 1. In **VS Code** on **3_add2Integers.cpp**, click the *Play* button to build the project
-2. If there are build errors or warnings, then debug necessary until it builds without them
+2. If there are build errors or warnings, then debug necessary until it builds cleanly
 
-## 8. Run **3_add2Integers** executable
+## Run **3_add2Integers** executable
 1. Open a new **Terminal** in **VS Code** if needed, keyboard shortcut ``Ctrl+Shift+` ``
 2. Run executable
     1. `% ./3_add2Integers/3_add2Integers`
 3. If executable is not performing as expected, debug as necessary until it does
 
-## 8. Continue to 4_addWith2Files.md
+## Post project review
+1. Things are starting to syntactically click with **C++**
+    1. Be wary of thinking Pythonically
+        1. Think more rigidly with stricter organization
+    2. Do programming languages have false cognates?
+        - I know dir is used differently in **Python** versus the **Microsoft** console window so I do need to be clear how **C++** is using each term
+2. **clang++** is a compiler and **CMAKE** is a build system generator
+    1. Build system generators define how to compile your code, but are not necessary
+    2. **CMAKE** is probably more powerful than I need right now and adds a layer of complexity over simply using **clang++**
