@@ -28,7 +28,7 @@ projects/learnCPP/4_addUsing2Files.md
 ```
 
 ## Write code
-- Mid-process notes:
+- In-process notes:
     1. **clang++** isn't compiling all of the files
         1. Can use a forward declaration that declares a function's name, any inputs, and any outputs so that it can be called in `main()` without error
             1. <u>Declaration</u>: associates the variable with a type
@@ -43,7 +43,6 @@ projects/learnCPP/4_addUsing2Files.md
             #include <iostream>
             #include "4-1_userInput.h"
             ```
-    
 
 ## Build **4_addUsing2Files** executable
 1. In **VS Code** on **4_addUsing2Files.cpp**, click the *Play* button to build the project

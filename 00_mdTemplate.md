@@ -27,7 +27,7 @@ projects/learnCPP/00_mdTemplate.md
 ```
 
 ## Write code
-- Mid-process notes:
+- In-process notes:
     1. (OPTIONAL)
 
 ## Build **00_mdTemplate** executable
