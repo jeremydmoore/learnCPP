@@ -28,5 +28,6 @@
    1. I'm much more familiar with **VS Code**
    2. **Microsoft**'s documentation is much better than **Apple**'s
    3. There are more resources available for **VS Code** online than **Xcode**
+   4. I'm not sure where I'll end up and **VS CODE** is the more portable IDE to write in 
 
 ## Continue to 1_helloWorld.md

@@ -1,59 +1,50 @@
-# 5_setupOpenCV.md
+# 5_setupPythonAndOpenCV.md
 
 projects/learnCPP/5_setupOpenCV.md
 
-## Make a directory and source code file for this project in **Terminal**
-1. `% mkdir ~/projects/learnCPP/5_setupOpenCV`
-2. `% touch ~/projects/learnCPP/5_setupOpenCV/5_setupOpenCV.cpp`
+1. Install [**Homebrew**](https://brew.sh) in **Terminal**
+    1. `% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+    2. Follow directions from **Homebrew** to copy/paste info to your **ZSH** profile
+    3. Update **Homebrew**
+        1. `% brew update`
+2. Install **Python** in **Homebrew**
+    - NOTE: we need to install **Python** now so when we build **OpenCV** we can setup **Python** bindings in addition to **C++**
+    1. `% brew install python`
+    2. Verify **Python** installation
+        1. My `% which python3` now outputs the **Homebrew** version's location as `/opt/homebrew/bin/python3`
+        2. An additional check is that `% python3` properly opens **Python**
+            - `>>> quit()` to quit at the **Python** command prompt
+3. Install additional programs in **Homebrew**
+    1. `% brew install cmake wget`
+        1. If **Homebrew** says to run something to install a program's "docs" or "man pages" I *highly* suggest you do so, for example, `% brew install cmake-docs`
+    2. `% brew install jpeg libtiff libpng openexr`
+        1. If **Homebrew** says something "is already installed and up-to-date" don't worry about reinstalling
+    3. `% brew install eigen tbb`
+4. Update **pip3**
+    - NOTE: Update `pip3` via a call inside of `python3` as directed by **PIP** in the past
+    1. `% python3 -m pip install --upgrade pip`
+4. Install virtual environment packages for **Python**
+    1. `% sudo -H pip3 install virtualenv virtualenvwrapper
+5. Setup "cv" **Python** virtual environment
+    1. Add virtual environment to **ZSH** profile
+        1. `% nano ~/.zprofile` to open our profile in the **Nano** text editor
+        2. Add the following lines to the end
+        ```c++
+        # virtualenv and virtualenvwrapper
+        export WORKON_HOME=$HOME/.virtualenvs
+        export VIRTUALENVWRAPPER_PYTHON=/opt/homebrew/bin/python3
+        source /opt/homebrew/bin/virtualenvwrapper.sh
+        ```
+        3. Activate the newly updated profile
+            1. `% source ~/.zprofile` which results in the creation of new files in /Users/<your_username>/.virtualenvs/
+        3. Save and quit **nano** by following directions, in-app
+    2. Make new **Python** virtual environment using our `python3` named `cv` for "computer vision"
+        1. `% mkvirtualenv cv -p python3
+        1. Start working on `cv` virtual environment
+            1. `% workon cv`
+        2. Install **numpy** for **Python**
+            - NOTE: we linked `python3` as our `python` in the virtual environment, which means we simply call `python` and `pip`, dropping the `3` suffix
+            1. `% pip install numpy`
 
-## Begin coding in **VS Code**
-3. Open **VS Code** in learnCPP working directory, if not already open
-    1. `% code ~/projects/learnCPP/`
-4. Double-click **5_setupOpenCV.cpp** in **VS Code**'s *Explorer* tab to open the file
-
-## Add boilerplate to **5_setupOpenCV.cpp**
-```c++
-/* 
-    projects/learnCPP/5_setupOpenCV.cpp
-
-    Expected behavior:
-    1. Create an image
-    2. Display image
-
-    Jeremy@MooreCreativeArts.com
-*/
-```
-
-## Write code
-- In-process notes:
-    1. Install: [**OpenCV**](https://docs.opencv.org/4.x/d0/db2/tutorial_macos_install.html) for **macOS**
-        1. Install **OpenCV** using **HomeBrew**
-            - Could be built from source for the most cutting-edge version, but I want a stable version while I'm still learning
-            1.  Install [**HomeBrew**](https://brew.sh) for **macOS** in **Terminal**
-                1. `% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-                2. Finish setting up **Homebrew** following their instructions (THESE ARE UNIQUE TO EACH USER)
-                    1. `echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/jeremymoore/.zprofile`
-                    2.  `echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/jeremymoore/.zprofile`
-                    3. `eval "$(/opt/homebrew/bin/brew shellenv)"`
-                3. Update **Homebrew** which is also a test to make sure it's installed
-                    1. `brew update`
-            2. `brew install opencv`
 
 
-                
-
-
-## Build **5_setupOpenCV** executable
-1. In **VS Code** on **5_setupOpenCV.cpp**, click the *Play* button to build the project
-2. If there are build errors or warnings, then debug as necessary until it builds without them
-
-## Run **5_setupOpenCV** executable
-1. Open a new **Terminal** in **VS Code** if needed, keyboard shortcut ``Ctrl+Shift+` ``
-2. Run executable
-    1. `% ./5_setupOpenCV/5_setupOpenCV`
-3. If executable is not performing as expected, debug as necessary until it does
-
-## Post project review
-1. **OpenCV** is a large library and can take a while to download and install via **HomeBrew**
-    1. Like "go make & enjoy a coffee" long
- 
