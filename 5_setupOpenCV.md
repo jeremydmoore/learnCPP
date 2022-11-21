@@ -60,6 +60,7 @@ projects/learnCPP/5_setupOpenCV.md
 ## Clone **OpenCV** and "contrib" files from **GitHub**
 1. `% cd ~/`
 2. `% git clone https://github.com/opencv/opencv`
+    - NOTE: repository size is larger than most at ~500 mB
 3. `% git clone https://github.com/opencv/opencv_contrib.git`
 
 ##**CMake** **OpenCV**
@@ -67,12 +68,12 @@ projects/learnCPP/5_setupOpenCV.md
 2. `% cd build`
 3. `% workon cv`
     - NOTE: our **Python** virtual environment should still be active from above, but in case you've closed your **Terminal**--like I did when I took a break between these steps--you need to activate it again
-4. Run `cmake` using personal **C++** flags plus **Python** instructions from **pyimagesearch gurus** 
+4. Run `cmake` using personal **C++** flags plus **Python** flags from a paywalled [**pyimagesearch gurus**](https://pyimagesearch.com/pyimagesearch-gurus/) page
     ```zsh
     % cmake -D CMAKE_BUILD_TYPE=RELEASE \
         -D OPENCV_GENERATE_PKGCONFIG=ON \
         -D CMAKE_INSTALL_PREFIX=/usr/local \
-        -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib_modules \
+        -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \
         -D PYTHON3_LIBRARY=`python -c 'import subprocess ; import sys ; s = subprocess.check_output("python-config --configdir", shell=True).decode("utf-8").strip() ; (M, m) = sys.version_info[:2] ; print("{}/libpython{}.{}.dylib".format(s, M, m))'` \
         -D PYTHON3_INCLUDE_DIR=`python -c 'import distutils.sysconfig as s; print(s.get_python_inc())'` \
         -D PYTHON3_EXECUTABLE=$VIRTUAL_ENV/bin/python \
@@ -82,6 +83,7 @@ projects/learnCPP/5_setupOpenCV.md
         -D INSTALL_C_EXAMPLES=ON \
         -D OPENCV_ENABLE_NONFREE=ON \
         -D WITH_GPHOTO2=ON \
+        -D WITH_QT=ON \
+        -D Qt5_DIR=$(brew --prefix qt5)/lib/cmake/Qt5 \
         -D BUILD_EXAMPLES=ON ..
-        
     ```
