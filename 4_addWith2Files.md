@@ -61,6 +61,7 @@ projects/learnCPP/4_addUsing2Files.md
     1. Is the only requirement to run this on Windows using a Windows build environment?
         1. Good question, but waaay out of scope for this macOS project
 3. Create namespaces inside of header files to control data flow in the program
+    - NOTE: Under "Write Code" above I discuss why I won't be using `namespace` on advice from **Google**
     1. In ***.h** file:
         ```c++
         namespace foo
