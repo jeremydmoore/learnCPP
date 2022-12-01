@@ -33,14 +33,14 @@ projects/learnCPP/1_helloWorld.md
 1. After clicking *Play* for the first time on a ***.cpp** file **VS Code** will create a **.vscode** directory in **projects/LearnCPP**
 2. Double-click **.vscode/tasks.json** in **VS Code**'s *Explorer* tab to open the file
     1. On line 10, under `"args":` delete `"-g",`
-    2. Still on line 10, add `"-std=c++20",` then hit enter
+    2. Still on line 10, add `"-std=c++17",` then hit enter
     3. On the new line 11 add `"-stdlib=libc++",`
     4. `"args":` should look like below
 ```c++
             "args": [
                 "-fcolor-diagnostics",
                 "-fansi-escape-codes",
-                "-std=c++20",
+                "-std=c++17",
                 "-stdlib=libc++",
                 "${file}",
                 "-o",
