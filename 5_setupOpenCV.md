@@ -126,5 +126,5 @@ projects/learnCPP/5_setupOpenCV.md
         1. Keyboard shortcut: "Cmd+Shift+P"
         2. Search for "C/C++: Edit configurations"
     2. Scroll down to Include Path section
-    3. Add "/usr/local/include/opencv4"
+    3. Add "/usr/local/include/opencv4/**"
     4. Save and close
