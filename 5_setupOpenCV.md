@@ -120,3 +120,11 @@ projects/learnCPP/5_setupOpenCV.md
     1. `% python`
     2. `>>> import cv2`
     3. `>>> cv2.__version__`
+
+ ## Tell **VS Code** where to look for our **openCV** headers
+    1. In **VS Code** open the C/C++ Configurations page
+        1. Keyboard shortcut: "Cmd+Shift+P"
+        2. Search for "C/C++: Edit configurations"
+    2. Scroll down to Include Path section
+    3. Add "/usr/local/include/opencv4"
+    4. Save and close
