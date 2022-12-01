@@ -96,7 +96,7 @@ projects/learnCPP/5_setupOpenCV.md
         ..
     ```
 5. Build **openCV** from source
-    1. `% make -j8
+    1. `% make -j8`
     - NOTE: `-j8` uses 8 cores, set appropriately for your machine
     - NOTE: if you receive an error, be sure to run `% make clean` before trying to build again
     - NOTE: if you receive an error, first run `% make clean` before trying to build again, then try again with `% make` or `% make VERBOSE=1`
@@ -122,9 +122,20 @@ projects/learnCPP/5_setupOpenCV.md
     3. `>>> cv2.__version__`
 
  ## Tell **VS Code** where to look for our **openCV** headers
-    1. In **VS Code** open the C/C++ Configurations page
-        1. Keyboard shortcut: "Cmd+Shift+P"
-        2. Search for "C/C++: Edit configurations"
-    2. Scroll down to Include Path section
-    3. Add "/usr/local/include/opencv4/**"
-    4. Save and close
+1. In **VS Code** in the **.vscode** directory
+    1. Open **c_cpp_properties.json**
+        1. Add `/usr/local/include/opencv4/**` to the end of `"includePath"` options
+        2. Save and close file
+    2. Open **tasks.json**
+        1. Under `"args"` after `"-stdlib=libc++",`, add 5 options:
+            1. `"-I/usr/local/include/opencv4",`
+            2. `"-lopencv_core",`
+            3. `"-lopencv_imgcodecs",`
+            4. `"-lopencv_highgui",`
+            5. `"-L/usr/local/lib",`
+        2. Save and close file
+    1. Keyboard shortcut: "Cmd+Shift+P"
+    2. Search for "C/C++: Edit configurations"
+2. Scroll down to Include Path section
+3. Add "/usr/local/include/opencv4/**"
+4. Save and close
