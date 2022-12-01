@@ -15,7 +15,7 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 
-int getFilenameFromUserInput()
+std::string getFilenameFromUserInput()
 {
     std::cout << "Enter a filename: ";
     std::string name {};
