@@ -41,4 +41,4 @@ projects/learnCPP/00_mdTemplate.md
 3. If executable is not performing as expected, debug as necessary until it does
 
 ## Post project review
-1. What I learned (REQUIRED)
+1. What I learned (OPTIONAL)
